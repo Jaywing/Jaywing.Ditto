@@ -6,7 +6,7 @@ using Our.Umbraco.Ditto;
 using Umbraco.Core.Models;
 using Umbraco.Web;
 using System.Linq;
-
+using System.Web.Mvc;
 using StaticValues = Jaywing.Ditto.Shared.StaticValues;
 
 namespace Jaywing.Ditto.Processors
@@ -20,7 +20,7 @@ namespace Jaywing.Ditto.Processors
 
         public ChildrenAttribute(bool includeGrandChildren)
         {
-            _helper = new UmbracoHelper(UmbracoContext.Current);
+            _helper = DependencyResolver.Current.GetService<UmbracoHelper>();
             IncludeGrandChildren = includeGrandChildren;
         }
 
