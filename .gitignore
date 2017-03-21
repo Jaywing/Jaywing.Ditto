@@ -260,7 +260,4 @@ ModelManifest.xml
 
 # ImageProcessor DiskCache 
 **/App_Data/cache/
-/SkyOceanRescue.Web/Media
-/SkyOceanRescue.Web/App_Data/umbraco.licensing.log.txt
-/SkyOceanRescue/Builds/IAT
 /.idea
